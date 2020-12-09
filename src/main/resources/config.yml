@@ -1,0 +1,181 @@
+MySQL: # MySQL Storage
+  # Enables / Disables storage by MySQL
+  Use: false
+  # MySQL server IP
+  Host: "localhost:3306"
+  # Name of the database that will be stored in the table
+  DataBase: ""
+  # MySQL login username
+  User: ""
+  # MySQL password
+  Password: ""
+
+Permission: # All permissions
+  # Administrator permission
+  Admin: "backup.admin"
+
+Tasks: # Time for all plugin tasks
+  # After that time the backups will be deleted (In days)
+  Purge: 2
+  # Time that will create backup of online players (In minutes)
+  Create: 60
+  # Time that the inventory of backup will wait for the player to send the username (In seconds)
+  Time-Out: 10
+
+Inventory: # Inventory that will contains all backups
+  # Title format
+  #
+  # Placeholders:
+  # {player} - Player name
+  Title: "&7All Backups of &6{player}"
+  # Menu size (Only multiples of 9)
+  Size: 54
+  Template:
+    # Amount item
+    Amount: 1
+    # Item material
+    Material: ""
+    # Item data material
+    Data: 0
+    # Item name
+    #
+    # Placeholders:
+    # {player} - Player name
+    # {date} - Backup date
+    Name: "&6Backup"
+    # Enables / Disables Glow
+    Glow: false
+    # Item Lore
+    #
+    # Placeholders:
+    # {player} - Player name
+    # {date} - Backup date
+    Lore:
+      - ""
+      - "&7Backup of &6{player}"
+      - "&7Create at &6{date}"
+    # Item enchantment (Remember in disable the glow) - (All Minecraft enchants https://ghostbin.co/paste/w2ttacs)
+    Enchantment: []
+    Head: # Head system
+      # Enables / Disables Item be a head
+      Use: true
+      # Head texture (These heads which will be the Minecraft textures URL code) - (If it is empty it will be the head of the player)
+      Texture: ""
+  Custom-Items: # Items that have function
+    Previous-Page: # The format of the referring item the previous page
+      # Position of item in menu
+      Slot: 45
+      # Amount of the item
+      Amount: 1
+      # Material of the item
+      Material: ""
+      # Material date of the item
+      Data: 0
+      # Name of the item
+      #
+      # Placeholders:
+      # {player} - Player name
+      Name: "&cPrevious Page"
+      # Enables / Disables Glow in the item
+      Glow: false
+      # Lore of the item
+      #
+      # Placeholders:
+      # {player} - Player name
+      Lore: []
+      # Enchantment in the item (Remember if you want to disable the glow) - (All Minecraft enchants https://ghostbin.co/paste/w2ttacs)
+      Enchantment: []
+      Head: # Head drop system
+        # Enables / Disables Head system
+        Use: true
+        # Texture of the head (These heads will be the Minecraft textures URL code) - (If it is null it will be the head of the mob)
+        Texture: "8652e2b936ca8026bd28651d7c9f2819d2e923697734d18dfdb13550f8fdad5f"
+    Next-Page: # The format of the referring item the next page
+      # Position of item in menu
+      Slot: 53
+      # Amount of the item
+      Amount: 1
+      # Material of the item
+      Material: ""
+      # Material date of the item
+      Data: 0
+      # Name of the item
+      #
+      # Placeholders:
+      # {player} - Player name
+      Name: "&aNext Page"
+      # Enables / Disables Glow in the item
+      Glow: false
+      # Lore of the item
+      #
+      # Placeholders:
+      # {player} - Player name
+      Lore: []
+      # Enchantment in the item (Remember if you want to disable the glow) - (All Minecraft enchants https://ghostbin.co/paste/w2ttacs)
+      Enchantment: []
+      Head: # Head drop system
+        # Enables / Disables Head system
+        Use: true
+        # Texture of the head (These heads will be the Minecraft textures URL code) - (If it is null it will be the head of the mob)
+        Texture: "2a3b8f681daad8bf436cae8da3fe8131f62a162ab81af639c3e0644aa6abac2f"
+  Decoration: # Items that have no function, only decorative
+    Information: # Any name
+      # Position of the item in menu
+      Slot: 4
+      # Amount item
+      Amount: 1
+      # Item material
+      Material: ""
+      # Item data material
+      Data: 0
+      # Item name
+      #
+      # Placeholders:
+      # {player} - Player name
+      Name: "&6Information"
+      # Enables / Disables Glow
+      Glow: false
+      # Item Lore
+      #
+      # Placeholders:
+      # {player} - Player name
+      Lore:
+        - "&7Backup of {player}"
+      # Item enchantment (Remember in disable the glow) - (All Minecraft enchants https://ghostbin.co/paste/w2ttacs)
+      Enchantment: []
+      Head: # Head system
+        # Enables / Disables Item be a head
+        Use: true
+        # Head texture (These heads which will be the Minecraft textures URL code)
+        Texture: "16439d2e306b225516aa9a6d007a7e75edd2d5015d113b42f44be62a517e574f"
+
+Inventory-Edit: # Edit Backup Items
+  # Title format
+  #
+  # Placeholders:
+  # {player} - Player name
+  # {date} - Backup date
+  Title: "&7Backup items from of &6{date}"
+  Custom-Items: # Items that have function
+    Back: # Format of the item referring to back
+      # Position of item in menu
+      Slot: 44
+      # Amount of the item
+      Amount: 1
+      # Material of the item
+      Material: "ARROW"
+      # Material date of the item
+      Data: 0
+      # Name of the item
+      Name: "&cBack"
+      # Enables / Disables Glow in the item
+      Glow: false
+      # Lore of the item
+      Lore: []
+      # Enchantment in the item (Remember if you want to disable the glow) - (All Minecraft enchants https://ghostbin.co/paste/w2ttacs)
+      Enchantment: []
+      Head: # Head drop system
+        # Enables / Disables Head system
+        Use: false
+        # Texture of the head (These heads will be the Minecraft textures URL code) - (If it is null it will be the head of the mob)
+        Texture: ""

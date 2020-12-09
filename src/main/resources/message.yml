@@ -1,0 +1,74 @@
+No-Permission: # When the player does not have permission
+  # Message which will be sent if the player is not allowed to permission the get backups
+  Admin: "&6&lBACKUP &7You do not have permission."
+
+Backup: # Command - /backup
+  # Message which will be sent if the player get a backup successfully
+  #
+  # Placeholders:
+  # {player} - Player name
+  # {date} - Backup date
+  Success: # Text message
+    Use: true
+    Message: "&6&lBACKUP &7You obtained a backup of &6{player}&7."
+  Success-Bar: # ActionBar message
+    Use: false
+    Message: "&7You obtained a backup of &6{player}"
+  Success-Title: # Title and SubTitle message
+    Use: false
+    Title: "&6You obtained"
+    SubTitle: "&7a backup of &6{player}"
+
+  # Message which will be sent if a player request an order to check backup
+  #
+  # Placeholders:
+  # {time} - Time it takes for the action to expire
+  Request: # Text message
+    Use: true
+    Message: "&6&lBACKUP &7Type the username in chat, you have &6{time} &7seconds."
+  Request-Bar: # ActionBar message
+    Use: false
+    Message: "&7Type the username in chat"
+  Request-Title: # Title and SubTitle message
+    Use: false
+    Title: "&6{time} seconds"
+    SubTitle: "&7to type the username in the chat"
+
+  # Message which will be sent if a time to player type in the chat expired
+  Time-Expired: # Text message
+    Use: true
+    Message: "&6&lBACKUP &7Time expired."
+  Time-Expired-Bar: # ActionBar message
+    Use: false
+    Message: "&7Time expired"
+  Time-Expired-Title: # Title and SubTitle message
+    Use: false
+    Title: "&6You time"
+    SubTitle: "&7has expired"
+
+  # Message which will be sent if a player not contain backup or no exist
+  #
+  # Placeholders:
+  # {player} - The given player name
+  Player-Not-Found: # Text message
+    Use: true
+    Message: "&6&lBACKUP &7Player &6{player} &7doesn't contain backup."
+  Player-Not-Found-Bar: # ActionBar message
+    Use: false
+    Message: "&7Player &6{player} &7doesn't contain backup"
+  Player-Not-Found-Title: # Title and SubTitle message
+    Use: false
+    Title: "&6Error"
+    SubTitle: "&7Player &6{player} &7doesn't contain backup"
+
+  # Message which will be sent if the arguments are not valid"
+  Invalid-Argument: # Text message
+    Use: true
+    Message: "&6&lBACKUP &7Invalid arguments, use &6/backup <player>&7."
+  Invalid-Argument-Bar: # ActionBar message
+    Use: false
+    Message: "&7Invalid arguments, use &6/backup <player>"
+  Invalid-Argument-Title: # Title and SubTitle message
+    Use: false
+    Title: "&6Error"
+    SubTitle: "&7Use &6/backup <player>"
